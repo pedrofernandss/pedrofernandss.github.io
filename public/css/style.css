@@ -191,9 +191,6 @@
   }
 }
 @layer utilities {
-  .\@container {
-    container-type: inline-size;
-  }
   .invisible {
     visibility: hidden;
   }
@@ -514,9 +511,6 @@
   }
   .hidden {
     display: none;
-  }
-  .inline {
-    display: inline;
   }
   .inline-block {
     display: inline-block;
@@ -3571,6 +3565,9 @@ input#nav-toggle:checked ~ #nav-menu {
 }
 .gallery-slider {
   margin-left: calc(var(--spacing) * 0) !important;
+}
+.theme-switcher {
+  display: none !important;
 }
 @layer base {
   [type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {

@@ -1,0 +1,28 @@
+############# Navegação em Português ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[main]]
+name = "Blog"
+url = "/blog"
+weight = 2
+
+[[main]]
+name = "Sobre Mim"
+url = "/sobre-mim"
+weight = 3
+
+# footer menu
+[[footer]]
+name = "Contato"
+url = "/contato"
+weight = 1
+
+[[footer]]
+name = "Sobre Mim"
+url = "/sobre-mim"
+weight = 2

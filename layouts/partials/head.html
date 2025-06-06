@@ -1,0 +1,53 @@
+<meta charset="utf-8" />
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, maximum-scale=5" />
+
+<meta name="theme-name" content="hugoplate" />
+
+{{ partialCached "favicon" . }}
+
+
+{{ partialCached "manifest" . }}
+
+
+{{ partialCached "site-verifications.html" . }}
+
+
+{{ partial "basic-seo.html" . }}
+
+
+{{ partialCached "custom-script.html" . }}
+
+
+{{ if and site.Config.Services.GoogleAnalytics.ID (ne site.Config.Services.GoogleAnalytics.ID "G-MEASUREMENT_ID") }}
+  {{ template "_internal/google_analytics.html" . }}
+{{ end }}
+
+
+{{ partialCached "gtm.html" . }}
+
+
+{{ partial "search-index.html" . }}
+
+
+{{/* {{ partialCached "matomo-analytics.html" . }} */}}
+
+{{/* {{ partialCached "baidu-analytics.html" . }} */}}
+
+{{/* {{ partialCached "plausible-analytics.html" . }} */}}
+
+{{/* {{ partialCached "counter-analytics.html" . }} */}}
+
+{{/* {{ partialCached "crisp-chat.html" . }} */}}
+
+{{ partial "mermaid/assets/js" . }}
+
+
+{{/* Carrega o CSS customizado se ele existir */}}
+{{ $customCSS := resources.Get "css/custom.css" }}
+{{ with $customCSS }}
+  {{ $stylesheet := . | resources.Minify }}
+  <link rel="stylesheet" href="{{ $stylesheet.RelPermalink }}">
+{{ end }}
