@@ -33,28 +33,33 @@ jobs:
           submodules: true  # ESSENCIAL: Baixa o tema que é um submódulo
           fetch-depth: 0    # Necessário para o Hugo obter o histórico completo
 
-      # 2. Configura o Node.js (necessário para o tema Hugoplate)
+      # 2. Configura o Node.js
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Pode usar 18 ou 20
+          node-version: '20'
       
-      # 3. Instala as dependências do tema (Tailwind CSS, plugins, etc)
+      # 3. Instala as dependências do tema
       - name: Install Node Dependencies
         run: npm install
 
-      # 4. Instala o Hugo (versão extended)
+      # --- PASSO ADICIONADO AQUI ---
+      # 4. Garante que o TailwindCSS seja executável
+      - name: Make TailwindCSS executable
+        run: chmod +x ./node_modules/.bin/tailwindcss
+
+      # 5. Instala o Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
-          extended: true # A versão "extended" é recomendada
+          extended: true
 
-      # 5. Compila o site
+      # 6. Compila o site
       - name: Build
         run: hugo --minify
 
-      # 6. Envia o site compilado para o GitHub Pages
+      # 7. Envia o site compilado para o GitHub Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
