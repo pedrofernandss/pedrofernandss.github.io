@@ -1,0 +1,32 @@
+# Arquivos e pastas gerados pelo Hugo
+/public/
+/resources/
+/static/uploads/
+*.hugo.json
+
+# Arquivos de log e cache do Hugo
+hugo_stats.json
+.hugo_build.lock
+
+# Dependências do Node (MUITO IMPORTANTE)
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# Arquivos de configuração de editores e IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos do Sistema Operacional
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Arquivos de build de outras ferramentas
+dist/
+build/
