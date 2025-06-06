@@ -1,6 +1,6 @@
 ######################## Default Configuration ####################
 
-baseURL = "https://pedrofernandss.github.io"
+baseURL = "https://pedrofernandss.github.io/"
 title = "Pedro Fernandes' Blog"
 theme = "hugoplate"
 timeZone = "America/Sao_Paulo"
