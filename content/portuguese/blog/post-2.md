@@ -3,7 +3,7 @@ title: "Uma Reflexão Sobre a Representatividade de Dados em Datasets Globais"
 meta_title: ""
 description: ""
 date: 2025-07-19T05:17:00Z
-image: "/images/gallery/post02/cover.png"
+image: "/assets/images/gallery/post02/cover.png"
 categories: ["Inteligência Artificial","Dados","Pesquisas","Projetos"]
 author: "Pedro Fernandes"
 tags: ["dados","pesquisa","projetos","reflexões"]
