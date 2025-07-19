@@ -29,6 +29,7 @@ A conclusão do estudo é dita como: _**"The results of our study suggest that f
 Além disso, uma análise dos metadados das imagens presentes no ImageNet - base de dados utilizada para treinar modelos importantes como ResNet50, MobileNet, Inception e YOLO 8 - revela que os dados possuem origem principalmente de países da Europa Ocidental, Estados Unidos e Canadá. Ao pensarmos a situação de maneira mais crítica, percebemos que estas bases de dados, que são utilizadas para o desenvolvimento de modelos state-of-the-art não tem sido diversas o suficiente para se mostrarem representativas em escala global.
 
 {{< figure src="/images/gallery/post02/second_image.png" alt="Infográfico de Dispersão de Fonte de Dados" >}}
+
 Neste contexto, em que as grande base de dados são compostas majoritariamente por informações contextualizadas à realidade norte americana e europeia, surge o questionamento de quando devemos começar a construir nossas próprias base de dados para que sejam representativas à nossa realidade? No projeto "Onde Está Meu Caramelo?" percebemos que no Brasil, há uma quantidade imensa de cachorros SRD (Sem raça definida) conhecidos também como cachorros caramelos e fiapos de manga e bem inferior de, por exemplo Husky's.
 
 Qual o impacto que o uso solo dos dataset's disponíveis on-line teriam na performance do modelo? Considerando que em produção, o modelo irá se deparar com imagens que representem o cotidiano e costumes brasileiros como fazer tranças nos pelos dos cachorros e colocar estrelinha após o pet-shop
