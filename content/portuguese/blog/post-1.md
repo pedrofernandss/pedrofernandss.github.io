@@ -1,7 +1,5 @@
 ---
 title: "O Problema do Caixeiro-Viajante: De Gregor Samsa à Max Verstappen e a Busca Incessante pelo Caminho Perfeito."
-meta_title: ""
-description: "this is meta description"
 date: 2025-05-29T05:00:00Z
 image: "/images/gallery/post01/cover.png"
 categories: ["Ciência da Computação", "Algoritmos", "Analogias"]

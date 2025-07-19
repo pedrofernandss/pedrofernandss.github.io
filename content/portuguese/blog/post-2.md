@@ -1,7 +1,7 @@
 ---
 title: "Uma Reflexão Sobre a Representatividade de Dados em Datasets Globais"
-meta_title: ""
-description: ""
+# meta_title: ""
+# description: ""
 date: 2025-07-19T05:17:00Z
 image: "/images/gallery/post02/cover.jpg"
 categories: ["Inteligência Artificial","Dados","Pesquisas","Projetos"]

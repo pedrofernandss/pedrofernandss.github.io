@@ -1,6 +1,6 @@
 module hugoplate.netlify.app
 
-go 1.21
+go 1.24.5
 
 require (
 	github.com/gethugothemes/hugo-modules/accordion v0.0.0-20250512035231-bb1514d411e2 // indirect
@@ -29,3 +29,5 @@ require (
 	github.com/hugomods/mermaid v0.1.4 // indirect
 	github.com/zeon-studio/hugoplate v0.0.0-20250507095558-974f11b1e3ff // indirect
 )
+
+replace github.com/zeon-studio/hugoplate => ./themes/hugoplate
