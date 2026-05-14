@@ -14,9 +14,16 @@ body {
 
   margin: 0;
   padding: $masthead-height 0 0;
-  padding-bottom: 9em;
   font-family: $global-font-family;
   line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  > * {
+    width: 100%;
+  }
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -363,3 +370,9 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
       display: none;
     }
   }
+
+#main {
+  flex: 1 0 auto;
+  width: 100%;
+  min-width: 0;
+}
